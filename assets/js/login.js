@@ -26,7 +26,7 @@ $(function() {
         e.preventDefault();
         $.ajax({
             method: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/api/reguser',
+            url: '/api/reguser',
             data: {
                 username: $('#form_reg input[name=username]').val(),
                 password: $('#form_reg input[name=password]').val(),
@@ -48,7 +48,7 @@ $(function() {
         e.preventDefault();
         $.ajax({
             method: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/api/login',
+            url: '/api/login',
             data: $(this).serialize(),
             success: function(res) {
                 console.log(res);
